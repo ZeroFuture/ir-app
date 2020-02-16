@@ -1,0 +1,31 @@
+.header-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8%;
+}
+
+.block {
+  padding: 10px 0 10px;
+}
+
+.upload,.postings,.header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.upload-text,.postings-text{
+  padding: 0 10px 0;
+}
+
+.ir-text {
+  font-size: x-large;
+  padding: 0 10px 0;
+}
+
+.ir-text-small {
+  padding: 0 10px 0;
+  font-size: xx-small;
+}

@@ -1,0 +1,10 @@
+.search-bar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.search-text {
+  padding: 0 10px 0;
+}
