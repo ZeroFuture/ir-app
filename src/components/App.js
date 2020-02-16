@@ -28,6 +28,8 @@ export class App extends Component {
         }
       ]
     },
+    indexingTime: 0,
+    memoryUsage: 0,
     selectedTerm: ''
   }
 
@@ -58,6 +60,8 @@ export class App extends Component {
             this.setState({
                 termFrequencies: response.data.termFrequencies,
                 invertedIndexes: response.data.invertedIndexes,
+                indexingTime: response.data.indexingTime,
+                memoryUsage: response.data.memoryUsage,
                 selectedTerm: ''
             });
         }).catch(function (error) {
@@ -120,6 +124,16 @@ export class App extends Component {
         </div>
 
         <div className="block">
+          <div className="postings">
+            <span className="postings-text">
+              Indexing time for uploaded file: {this.state.indexingTime} seconds
+            </span>
+          </div>
+          <div className="postings"> 
+            <span className="postings-text">
+              Memory usage for uploaded file: {this.state.memoryUsage} kb
+            </span>
+          </div>
           <div className="postings">
             <span className="postings-text">
               Posting list for uploaded file: 
