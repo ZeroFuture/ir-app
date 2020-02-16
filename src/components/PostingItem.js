@@ -1,5 +1,5 @@
 import React from 'react';
-import "./CardItem.css";
+import "../css/CardItem.css";
 
 class PostingItem extends React.Component {
   render() {

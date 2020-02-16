@@ -5,7 +5,7 @@ import { faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons'
 import SearchBar from './SearchBar';
 import TermList from './TermList';
 import HeaderImg from '../images/header-image.png';
-import "./App.css";
+import "../css/App.css";
 
 export class App extends Component {
   state = { 

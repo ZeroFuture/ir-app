@@ -1,6 +1,6 @@
 import React from 'react';
 import PostingItem from './PostingItem';
-import "./CardItem.css";
+import "../css/CardItem.css"
 
 class TermItem extends React.Component {
     render() {
