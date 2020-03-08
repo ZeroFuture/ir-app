@@ -8,7 +8,7 @@ import "css/SearchQuery.css";
 
 export default function SearchQuery(props) {
   const [query, setQuery] = useState('');
-  const [resultRecords, setResultRecords] = useState([]);
+  const [resultRecords, setResultRecords] = useState();
   const [searchTime, setSearchTime] = useState(0);
 
   const onQuerySubmit = (query) => {
@@ -38,7 +38,7 @@ export default function SearchQuery(props) {
   }
 
   const querySummary = () => {
-    if (query) {
+    if (query && resultRecords) {
       if (!resultRecords.length) {
         return (
           <div className="summary-text roboto-light">
