@@ -1,0 +1,10 @@
+.upload,.postings {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.upload-text,.postings-text{
+  padding: 0 10px 0;
+}
